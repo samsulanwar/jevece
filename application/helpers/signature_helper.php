@@ -1,0 +1,1 @@
+<?phpclass Signature{	function __construct()	{		}	function getSignature($id, $key){			$data = sha1(bin2hex($id.$key) . sha1(date("YmdH")));		return $data;	}	function compareSignature($id, $compare, $key){		$data = $this->getSignature($id, $key);		if ($data == $compare) {						return true;				}else{			return false;		}	}}?>

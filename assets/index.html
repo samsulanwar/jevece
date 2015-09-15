@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sidik Hanrei - Tutorial Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bsdocs.css" rel="stylesheet" media="screen">
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="plugins/flexslider.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    
+    <div class="container">
+        <header>
+        
+            <div class="row">
+              <div class="col-md-12">
+              
+              	<h1>Nama Blog</h1>
+                <h5><em class="text-muted">Moto atau Deskripsi Blog</em></h5>
+              
+              	<div class="nav-container">
+                    <ul class="nav nav-justified">
+                      <li class="active"><a href="#">Home</a></li>
+                      <li><a href="#">Projects</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Downloads</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+              
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="col-xs-12 col-md-8">
+                <section class="slider">
+                    <div class="flexslider">
+                      <ul class="slides">
+                        <li data-thumb="images/kitchen_adventurer_cheesecake_brownie.jpg">
+                            <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+                            </li>
+                            <li data-thumb="images/kitchen_adventurer_lemon.jpg">
+                            <img src="images/kitchen_adventurer_lemon.jpg" />
+                            </li>
+                            <li data-thumb="images/kitchen_adventurer_donut.jpg">
+                            <img src="images/kitchen_adventurer_donut.jpg" />
+                            </li>
+                            <li data-thumb="images/kitchen_adventurer_caramel.jpg">
+                            <img src="images/kitchen_adventurer_caramel.jpg" />
+                            </li>
+                      </ul>
+                    </div>
+                </section>
+              </div>
+              
+              <div class="col-md-4 text-right hidden-xs hidden-sm">
+               	<img src="images/300x250.png" />
+              </div>
+            </div>
+            
+        </header>
+        
+        <aside>
+        	<hr>
+            <div class="row">
+              <div class="col-xs-6 col-md-4">
+              	<h4>Content Left</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+              </div>
+              <div class="col-xs-6 col-md-4">
+              	<h4>Content Left</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+              </div>
+              <div class="col-md-4">
+              	<h4>Content Left</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+              </div>
+            </div>
+        </aside>
+        
+        <footer>
+            &copy; <a href="http://sidikhanrei.com">SidikHanrei.com</a> 2013
+        </footer>
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- PLUGINS -->
+	<script defer src="plugins/jquery.flexslider-min.js"></script>
+    
+    <script type="text/javascript">
+		$(window).load(function(){
+		  $('.flexslider').flexslider({
+			animation	: "slide",
+			controlNav	: false,
+			start		: function(slider){
+			  $('body').removeClass('loading');
+			}
+		  });
+		});
+    </script>
+    <script src="plugins/jquery.easing.js"></script>
+	<script src="plugins/jquery.mousewheel.js"></script>
+  </body>
+</html>
